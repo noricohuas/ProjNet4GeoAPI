@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Huitian.$id$</id>
+    <version>$version$</version>
+    <title>Huitian.$title$</title>
+    <authors>ProjNet4GeoAPI</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/ProjNet4GeoAPI</licenseUrl>
+    <projectUrl>https://github.com/ProjNet4GeoAPI</projectUrl>
+    <iconUrl>http://f.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=59f553fd00e9390156028a3843d733da/1f178a82b9014a90d32fad60a8773912b21beede.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>Copyright 2016</copyright>
+    <tags>Huitian</tags>
+    <dependencies>
+      <dependency id="GeoAPI" version="1.7.4.0" />
+    </dependencies>
+  </metadata>
+</package>

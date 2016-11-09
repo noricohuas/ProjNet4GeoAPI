@@ -108,6 +108,7 @@
       <Link>scskey.snk</Link>
     </None>
     <None Include="packages.config" />
+    <None Include="ProjNET.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
