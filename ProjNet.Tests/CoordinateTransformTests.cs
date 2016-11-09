@@ -658,7 +658,7 @@ namespace ProjNet.UnitTests
             IGeographicCoordinateSystem csSource = GeographicCoordinateSystem.WGS84;
             ICoordinateSystem csTarget = CoordinateSystemFactory.CreateFromWkt(
                "PROJCS[\"NAD83(NSRS2007) / Alaska zone 1\",GEOGCS[\"NAD83(NSRS2007)\",DATUM[\"NAD83_National_Spatial_Reference_System_2007\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],TOWGS84[0,0,0,0,0,0,0],AUTHORITY[\"EPSG\",\"6759\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4759\"]],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],PROJECTION[\"Hotine_Oblique_Mercator\"],PARAMETER[\"latitude_of_center\",57],PARAMETER[\"longitude_of_center\",-133.6666666666667],PARAMETER[\"azimuth\",323.1301023611111],PARAMETER[\"rectified_grid_angle\",323.1301023611111],PARAMETER[\"scale_factor\",0.9999],PARAMETER[\"false_easting\",5000000],PARAMETER[\"false_northing\",-5000000],AUTHORITY[\"EPSG\",\"3468\"],AXIS[\"X\",EAST],AXIS[\"Y\",NORTH]]");
-            //61.216667°, -149.883333°
+            //61.216667? -149.883333?
             //"POINT(4136805.82642057 -4424019.78560519)"
             Test("HotineObliqueMercator", csSource, csTarget,
                  new[] { -149.883333, 61.216667 },
@@ -714,7 +714,7 @@ namespace ProjNet.UnitTests
         [Test]
         public void AffineTransformationTest ()
         {
-            //Local coordinate system MNAU (Kraftwerk Mäuserich) (based on Gauß-Krüger using affine transformation)
+            //Local coordinate system MNAU (Kraftwerk Mäuserich) (based on Gau?Krüger using affine transformation)
             // affine transform
             // 1) Offset: X=-3454886,640m Y=-5479481,278m;
             // 2)Rotation: 332,0657, Rotation point  X=3456926,640m Y=5481071,278m;
@@ -748,7 +748,7 @@ namespace ProjNet.UnitTests
         [Test]
         public void InverseAffineTransformationTest ()
         {
-            //Local coordinate system MNAU (Kraftwerk Mäuserich) (based on Gauß-Krüger using affine transformation)
+            //Local coordinate system MNAU (Kraftwerk Mäuserich) (based on Gau?Krüger using affine transformation)
             // affine transform
             // 1) Offset: X=-3454886,640m Y=-5479481,278m;
             // 2)Rotation: 332,0657, Rotation point  X=3456926,640m Y=5481071,278m;
@@ -799,7 +799,7 @@ namespace ProjNet.UnitTests
         public void TestTransformOnFittedCoordinateSystem ()
         {
 
-            //Local coordinate system MNAU (Kraftwerk Mäuserich) (based on Gauß-Krüger using affine transformation)
+            //Local coordinate system MNAU (Kraftwerk Mäuserich) (based on Gau?Krüger using affine transformation)
             // affine transform
             // 1) Offset: X=-3454886,640m Y=-5479481,278m;
             // 2)Rotation: 332,0657, Rotation point  X=3456926,640m Y=5481071,278m;
